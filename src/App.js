@@ -13,6 +13,18 @@ class App extends Component {
         ]
     };
 
+    constructor() {
+        super();
+        //this.state = this.props.something;
+        console.log("App-Constructor")
+    }
+
+    componentDidMount() {
+        //Ajax calls go here
+        // this.setState({  })
+        console.log("App-mounted")
+    }
+
     handleIncrement = (counter) => {
         //use the spread operator to clone the counters
         const counters = [...this.state.counters];
